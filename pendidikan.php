@@ -18,7 +18,7 @@
             </section>
             <section class="content">
                 <div class="jumbotron bg-light-blue text-center">
-                    <h2>SUNTING DATA PENDIDIKAN DOSEN</h2>
+                    <h2>DATA PENDIDIKAN DOSEN</h2>
                 </div>
                 <form action="#" class="form-horizontal">
                     <div class="form-group row">
@@ -56,9 +56,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="text-right col-lg-12">
-                            <button type="submit" class="btn btn-danger">Batalkan</button>
-                            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                        <div class="col-xs-4">
+                            <button type="submit" class="btn btn-primary">Kembali</button>
+                        </div>
+                        <div class="text-right col-xs-8">
+                            <button type="submit" class="btn btn-danger">Tambahkan Data</button>
+                            <button type="submit" class="btn btn-primary">Sunting Data</button>
                         </div>
                     </div>
                 </form>
