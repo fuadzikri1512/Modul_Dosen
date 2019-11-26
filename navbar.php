@@ -60,8 +60,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="aktifitas.php">
-                                <i class="fa fa-calendar"></i> <span>Aktifitas</span>
+                            <a href="aktivitas.php">
+                                <i class="fa fa-calendar"></i> <span>Aktivitas</span>
                             </a>
                         </li>
                         <li>
