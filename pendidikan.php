@@ -78,7 +78,7 @@
                                 <form action="#" class="form-horizontal">
                                     <div class="form-group row">
                                         <div class="col-lg-2">
-                                            <label class="control-label" for="terapan">Magiste Terapan</label>
+                                            <label class="control-label" for="terapan">Magister Terapan</label>
                                         </div>
                                         <div class="col-lg-10">
                                             <input type="text" class="form-control" id="terapan">
@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-2">
-                                            <label class="control-label" for="terapan">Nama Perguruan Tinggi</label>
+                                            <label class="control-label" for="terapan">Perguruan Tinggi</label>
                                         </div>
                                         <div class="col-lg-10">
                                             <input type="text" class="form-control" id="perguruan-tinggi">
