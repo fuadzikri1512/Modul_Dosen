@@ -40,17 +40,17 @@
                         </div>
                     </div>
                     <div class="form-group row has-feedback">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-xs-12">
                             <label for="tahun" class="control-label">Tahun</label>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-xs-5">
                             <input type="date" id="tahun-awal" class="form-control">
                             <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-lg-1 col-xs-2">
                             <label for="" class="control-label">sampai</label>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-xs-5">
                             <input type="date" id="tahun-akhir" class="form-control">
                             <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                         </div>
