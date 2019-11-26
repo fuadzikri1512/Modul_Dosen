@@ -17,7 +17,10 @@
                 </ol>
             </section>
             <section class="content">
-                <div class="jumbotron bg-light-blue text-center">
+                <button type="button" class="btn btn-facebook" style="float:right; margin: 10px 10px 0 0">
+                    <span class="glyphicon glyphicon-print"></span>
+                </button>
+                <div class="jumbotron bg-light-blue text-center" style="border-radius: 1rem">
                     <h2>DATA PENDIDIKAN DOSEN</h2>
                 </div>
                 <form action="#" class="form-horizontal">
@@ -57,7 +60,11 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary">Kembali</button>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                Kembali
+                            </button>
                         </div>
                         <div class="text-right col-xs-8">
                             <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#sunting-pend-dosen" >Tambahkan Data</button>
