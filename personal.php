@@ -26,7 +26,7 @@
                             <label class="control-label" for="terapan">Nama Lengkap</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan">
+                            <input type="text" class="form-control" id="nama" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -34,7 +34,7 @@
                             <label class="control-label" for="terapan">Gelar</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan">
+                            <input type="text" class="form-control" id="gelar" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -42,7 +42,7 @@
                             <label class="control-label" for="terapan">NIDK</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan">
+                            <input type="text" class="form-control" id="nidk" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -50,7 +50,7 @@
                             <label class="control-label" for="terapan">Alamat Surel</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan">
+                            <input type="text" class="form-control" id="email" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -58,7 +58,7 @@
                             <label class="control-label" for="terapan">Nomor Handphone</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan">
+                            <input type="text" class="form-control" id="hp" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -66,21 +66,25 @@
                             <label class="control-label" for="terapan">Bidang Keahlian</label>
                         </div>
                         <div class="col-lg-10">
-                            <textarea class="form-control" rows="1" id="textarea"></textarea>
+                            <textarea class="form-control" rows="1" id="keahlian" disabled style="resize: none"></textarea>
                         </div>
                     </div>
-                    <!-- <div class="form-group row text-right">
+                    <div class="form-group row text-right">
                         <div class="col-lg-12">
-                            <button class="btn btn-primary" onclick="">Tambah</button>
-                            <button class="btn btn-primary" onclick="">Kurang</butto>n
+                            <button class="btn btn-primary" onclick="increase()">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                            </button>
+                            <button class="btn btn-primary" onclick="">
+                                <span class="glyphicon glyphicon-minus-sign"></span>
+                            </button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="form-group row">
                         <div class="col-lg-2">
                             <label class="control-label" for="terapan">Jabatan Akademik</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="">
+                            <input type="text" class="form-control" id="jabatan" disabled>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -99,7 +103,7 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header bg-yellow">
-                                <h2 class="modal-title text-center">SUNTING DATA PRIBADI DOSEN</h2>
+                                <h4 class="modal-title text-center">SUNTING DATA PRIBADI DOSEN</h4>
                             </div>
 
                             <!-- Modal Body -->
@@ -110,7 +114,7 @@
                                             <label class="control-label" for="terapan">Nama Lengkap</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="terapan">
+                                            <input type="text" class="form-control" id="nama-edit" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -118,7 +122,7 @@
                                             <label class="control-label" for="terapan">Gelar</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="terapan">
+                                            <input type="text" class="form-control" id="gelar-edit" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -126,7 +130,7 @@
                                             <label class="control-label" for="terapan">NIDK</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="terapan">
+                                            <input type="text" class="form-control" id="nidk-edit" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -134,7 +138,7 @@
                                             <label class="control-label" for="terapan">Alamat Surel</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="terapan">
+                                            <input type="text" class="form-control" id="email-edit" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -142,7 +146,7 @@
                                             <label class="control-label" for="terapan">Nomor Handphone</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="terapan">
+                                            <input type="text" class="form-control" id="hp-edit">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -150,15 +154,15 @@
                                             <label class="control-label" for="terapan">Bidang Keahlian</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <textarea class="form-control" rows="1" id="textarea"></textarea>
+                                            <textarea class="form-control" rows="1" id="keahlian-edit" style="resize: none"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row text-right">
                                         <div class="col-lg-12">
-                                            <button class="btn btn-warning" onclick="">
+                                            <button class="btn btn-warning">
                                                 <span class="glyphicon glyphicon-plus-sign"></span>
                                             </button>
-                                            <button class="btn btn-warning" onclick="">
+                                            <button class="btn btn-warning">
                                                 <span class="glyphicon glyphicon-minus-sign"></span>
                                             </button>
                                         </div>
@@ -168,7 +172,7 @@
                                             <label class="control-label" for="terapan">Jabatan Akademik</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="">
+                                            <input type="text" class="form-control" id="jabatan-edit">
                                         </div>
                                     </div>
                                 </form>
@@ -179,7 +183,7 @@
                                 <div class="form-group row">
                                     <div class="col-lg-12 text-right">
                                         <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
-                                        <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                        <button type="submit" class="btn btn-warning">Simpan Perubahan</button>
                                     </div>
                                 </div>
                             </div>
