@@ -48,7 +48,7 @@
                                 <button class="btn btn-primary">Info</button>
                             </th>
                             <th class="text-center" style="max-width: 120px">
-                                <button class="btn btn-warning">Edit</button>
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
                                 <button class="btn btn-success">Print</button>
                             </th>
@@ -130,6 +130,64 @@
                                 <div class="col-lg-12 text-right">
                                     <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
                                     <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Edit modal-->
+            <div id="edit" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content tambahData-->
+                    <div class="modal-content">
+                        <div class="modal-header bg-yellow">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center ">SUNTING DATA</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="form-horizontal">
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="terapan">Nama Dosen</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="terapan">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label for="tulisan-ilmiah">Tulisan Ilmiah</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label for="seminar">Seminar</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea name="seminar" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row has-feedback">
+                                    <div class="col-lg-3">
+                                        <label for="tahun" class="control-label">Tahun</label>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <input type="date" id="tahun-awal" class="form-control">
+                                        <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group row">
+                                <div class="col-lg-12 text-right">
+                                    <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
+                                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
                                 </div>
                             </div>
                         </div>
