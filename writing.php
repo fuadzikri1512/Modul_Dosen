@@ -39,19 +39,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1</th>
-                            <th>Namaku dosen</th>
-                            <th>Ilmiah banget</th>
-                            <th>Terang sekali</th>
-                            <th>Infinity</th>
-                            <th class="text-center" style="max-width: 50px">
+                            <td>1</td>
+                            <td>Namaku dosen</td>
+                            <td>Ilmiah banget</td>
+                            <td>Terang sekali</td>
+                            <td>Infinity</td>
+                            <td class="text-center" style="max-width: 50px">
                                 <button class="btn btn-primary">Info</button>
-                            </th>
-                            <th class="text-center" style="max-width: 120px">
+                            </td>
+                            <td class="text-center" style="max-width: 120px">
                                 <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
                                 <button class="btn btn-success">Print</button>
-                            </th>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
