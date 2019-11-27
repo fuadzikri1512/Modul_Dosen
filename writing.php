@@ -20,7 +20,7 @@
             <section class="content">
 
                 <div class="text-right">
-                    <button type="button" class="btn btn-default">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">
                         <span class="glyphicon glyphicon-plus-sign"></span>
                     </button>
                 </div>
@@ -77,6 +77,47 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.example-modal -->
+
+            <!--Save Modal-->
+            <div id="save" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content tambahData-->
+                    <div class="modal-content">
+                        <div class="modal-header bg-green">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center ">INSERT/ADD</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="form-horizontal">
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="terapan">Nama Dosen</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="terapan">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label for="tulisan-ilmiah">Tulisan Ilmiah</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="10" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group row">
+                                <div class="col-lg-12 text-right">
+                                    <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
+                                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php include 'frame2.php';?>
