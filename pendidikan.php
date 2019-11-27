@@ -61,14 +61,14 @@
                     <div class="form-group row">
                         <div class="col-xs-4">
                             
-                            <button type="submit" class="btn bg-maroon-gradient">
+                            <button type="submit" class="btn btn-primary">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                                 Kembali
                             </button>
                         </div>
                         <div class="text-right col-xs-8">
                             <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#sunting-pend-dosen" >Tambahkan Data</button>
-                            <button type="submit" class="btn btn-warning">Sunting Data</button>
+                            <button type="submit" class="btn btn-primary">Sunting Data</button>
                         </div>
                     </div>
                 </form>
@@ -77,11 +77,11 @@
 
                         <!-- Modal content-->
                         <div class="modal-content">
-                            <div class="modal-header bg-success text-center">
+                            <div class="modal-header bg-aqua-gradient text-center">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title">SUNTING DATA PENDIDIKAN DOSEN</h4>
                             </div>
-                            <div class="modal-body" style="height: 400px">
+                            <div class="modal-body">
                                 <form action="#" class="form-horizontal">
                                     <div class="form-group row">
                                         <div class="col-lg-2">
@@ -128,7 +128,7 @@
                                     </div-->
                                 </form>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer bg-aqua-gradient">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Batalkan</button>
                                 <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
                             </div>
