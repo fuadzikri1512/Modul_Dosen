@@ -19,11 +19,12 @@
             </section>
             <section class="content">
 
-                <div class="text-right">
+                <!--div class="text-right">
                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">
                         <span class="glyphicon glyphicon-plus-sign"></span>
                     </button>
-                </div>
+                </div-->
+                <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
                 <table class="table table-bordered col-lg-12">
                     <thead class="bg-aqua-gradient">
                         <tr>
@@ -102,7 +103,24 @@
                                         <label for="tulisan-ilmiah">Tulisan Ilmiah</label>
                                     </div>
                                     <div class="col-lg-9">
-                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="10" class="form-control"></textarea>
+                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label for="seminar">Seminar</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea name="seminar" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row has-feedback">
+                                    <div class="col-lg-3">
+                                        <label for="tahun" class="control-label">Tahun</label>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <input type="date" id="tahun-awal" class="form-control">
+                                        <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
                             </form>
