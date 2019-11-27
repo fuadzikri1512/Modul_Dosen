@@ -98,8 +98,8 @@
                         <div class="modal-content">
 
                             <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h2 class="modal-title text-center">SUTING DATA PRIBADI DOSEN</h2>
+                            <div class="modal-header bg-yellow">
+                                <h2 class="modal-title text-center">SUNTING DATA PRIBADI DOSEN</h2>
                             </div>
 
                             <!-- Modal Body -->
@@ -155,8 +155,12 @@
                                     </div>
                                     <div class="form-group row text-right">
                                         <div class="col-lg-12">
-                                            <button class="btn btn-primary" onclick="">Tambah</button>
-                                            <button class="btn btn-primary" onclick="">Kurang</butto>
+                                            <button class="btn btn-warning" onclick="">
+                                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                            </button>
+                                            <button class="btn btn-warning" onclick="">
+                                                <span class="glyphicon glyphicon-minus-sign"></span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -174,8 +178,8 @@
                             <div class="modal-footer">
                                 <div class="form-group row">
                                     <div class="col-lg-12 text-right">
-                                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Batalkan</button>
-                                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                        <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
+                                        <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
                                     </div>
                                 </div>
                             </div>
