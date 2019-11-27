@@ -41,14 +41,14 @@
                                     <td class="text-left"> Program...</td>
                                     <td>2019</td>
                                     <td>Software ini..</td>
-                                    <td width="5%">
-                                        <button class="btn btn-primary btn-xs"><i class="fa fa-info-circle"></i></button>
-                                    </td>
-                                    <td width="9%">
-                                        <button class="btn btn-warning btn-xs" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button>
-                                        <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete"><i class="fa fa-trash-o"></i></button>
-                                        <button class="btn btn-info btn-xs"><i class="fa fa-print"></i></button>
-                                    </td>
+                                    <th class="text-center" style="max-width: 50px">
+                                        <button class="btn btn-primary">Info</button>
+                                    </th>
+                                    <th class="text-center" style="max-width: 120px">
+                                        <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
+                                        <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
+                                        <button class="btn btn-success">Print</button>
+                                    </th>
                                 </tr>  
                             </tbody>
                         </table>
