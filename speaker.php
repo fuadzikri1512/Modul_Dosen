@@ -15,8 +15,9 @@
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                     <li class="active">Speaker</li>
                 </ol>
+            </section>
 
-                <section class="content">
+            <section class="content">
                 <button type="button" class="btn btn-facebook" style="float:right; margin: 10px 10px 0 0">
                     <span class="glyphicon glyphicon-print"></span>
                 </button>
@@ -30,7 +31,7 @@
                             <label class="control-label" for="terapan">Nama Dosen </label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="terapan" placeholder="Computer Science"                    
+                            <input type="text" class="form-control" id="terapan" placeholder="Computer Science">             
                         </div>
                     </div>
 
@@ -43,16 +44,18 @@
                         </div>
                     </div>
 
-                     <div class="col-lg-2">
-                            <label class="control-label" for="terapan">Bukti Pembangkit </label>
+                    <div class="form-group row">
+                        <div class="col-lg-2">
+                            <label class="control-label" for="terapan">Bukti Pendukung</label>
                         </div>
-
-                    <form>
-                     <div class="form-group">
-                      <label for="exampleFormControlFile1">Example file input</label>
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                      </div>
-                        </form>
+                        <div class="col-lg-3">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div>
+                        
+                        </div>
+                    </div>
 
                     <div class="form-group row has-feedback">
                         <div class="col-lg-2 col-xs-12">
@@ -138,7 +141,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
             </section>
         </div>
     </div>
