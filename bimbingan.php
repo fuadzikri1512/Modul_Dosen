@@ -53,7 +53,7 @@
             </section>
 
             <!--Delete modal-->
-            <div div class="modal fade" id="delete">
+            <div class="modal fade" id="delete">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-red">
