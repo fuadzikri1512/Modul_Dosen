@@ -37,10 +37,10 @@
                             <td>Gedung 27 lantai</td>
                             <td>1908</td>
                             <td>1945</td>
-                            <td class="text-center" style="max-width: 30px">
+                            <td class="text-center" style="width: 70px">
                                 <button class="btn btn-primary">Info</button>
                             </td>
-                            <td class="text-center" style="max-width: 90px">
+                            <td class="text-center" style="width: 200px">
                                 <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
                                 <button class="btn btn-success">Print</button>
