@@ -43,6 +43,7 @@
                             <ul class="treeview-menu">
                                 <li><a href="writing.php"><i class="fa fa-circle-o"></i> Writing</a></li>
                                 <li><a href="research_outcome.php"><i class="fa fa-circle-o"></i> Research Outcome</a></li>
+                                <li><a href="project.php"><i class="fa fa-circle-o"></i> Project Experience</a></li> 
                             </ul>
                         </li>
                         <li class="side">
