@@ -54,7 +54,7 @@
             </section>
 
             <!-- Modal Create -->
-            <div id="create" class="modal fade">
+            <div id="save" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
@@ -95,7 +95,7 @@
                                         <label class="control-label" for="terapan">Tahun</label>
                                     </div>
                                     <div class="col-lg-4">
-                                        <input type="date" id="tahun" class="form-control">
+                                        <input type="number" min="2013" id="tahun" class="form-control">
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                         <label class="control-label" for="terapan">Tahun</label>
                                     </div>
                                     <div class="col-lg-4">
-                                        <input type="date" id="tahun" class="form-control">
+                                        <input type="number" min="2013" id="tahun" class="form-control">
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
