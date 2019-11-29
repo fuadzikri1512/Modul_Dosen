@@ -16,6 +16,7 @@
                     <li class="active">Bimbingan Skripsi</li>
                 </ol>
             </section>
+
             <section class="content">
                 <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
                 <table class="table table-bordered col-lg-12">
@@ -52,87 +53,73 @@
                 </table>
             </section>
 
-            <!--Delete modal-->
-            <div class="modal fade" id="delete">
+            <!-- Modal Create -->
+            <div id="create" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header bg-red">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">Delete Data</h4>
-                        </div>
-                        <form action="#">
-                            <input name="id" type="hidden" value="">
-                            <div class="modal-body">
-                                <p>Apakah anda yakin menghapus data ini?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </div>
-                        </form>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.example-modal -->
 
-            <!--Save Modal-->
-            <div id="save" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-                <!-- Modal content tambahData-->
-                    <div class="modal-content">
+                        <!-- Modal Header -->
                         <div class="modal-header bg-green">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title text-center ">INSERT/ADD</h4>
+                            <h4 class="modal-title text-center">Bimbingan Skripsi - Add</h4>
                         </div>
+
+                        <!-- Modal Body -->
                         <div class="modal-body">
                             <form action="#" class="form-horizontal">
-                                <div class="form-group row has-feedback">
-                                    <div class="col-lg-2">
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
                                         <label class="control-label" for="terapan">Nama Dosen</label>
                                     </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="nama-dosen-add">
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="dosen">
                                     </div>
-                                    <div class="col-lg-2 text-right">
-                                        <label for="tahun" class="control-label">Tahun</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Judul</label>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <input type="number" min="2013" placeholder="2025" id="tahun-add" class="form-control">
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="judul">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Nama Mahasiswa</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="mahasiswa">
+                                    </div>
+                                </div>
+                                <div class="form-group row has-feedback">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Tahun</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="date" id="tahun" class="form-control">
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-lg-2">
-                                        <label for="judul">Judul</label>
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Program Studi</label>
                                     </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="judul-add">
-                                    </div>
-                                    <div class="col-lg-2 text-right">
-                                        <label for="prodi-add">Program Studi</label>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select name="prodi-add" id="prodi-add" class="form-control">
-                                            <option value="cs1">Computer Science 1</option>
-                                            <option value="cs2">Computer Science 2</option>
-                                            <option value="cs3">Computer Science 3</option>
+                                    <div class="col-lg-8">
+                                        <select id="studi">
+                                            <option value="bm">Business Management</option>
+                                            <option value="bis">Business Information System</option>
+                                            <option value="cs">Computer Science</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-lg-2">
-                                        <label for="nama-mhs-add">Nama Mahasiswa</label>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="nama-mhs-add">
                                     </div>
                                 </div>
                             </form>
                         </div>
+
+                        <!-- Modal Footer -->
                         <div class="modal-footer">
                             <div class="form-group row">
                                 <div class="col-lg-12 text-right">
                                     <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
-                                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                    <button type="submit" class="btn btn-success">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -140,65 +127,100 @@
                 </div>
             </div>
 
-            <!--Edit Modal-->
-            <div id="edit" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-                <!-- Modal content tambahData-->
+            <!-- Modal Edit -->
+            <div id="edit" class="modal fade">
+                <div class="modal-dialog">
                     <div class="modal-content">
+
+                        <!-- Modal Header -->
                         <div class="modal-header bg-yellow">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title text-center ">SUNTING DATA</h4>
+                            <h4 class="modal-title text-center">Bimbingan Skripsi - Edit</h4>
                         </div>
+
+                        <!-- Modal Body -->
                         <div class="modal-body">
                             <form action="#" class="form-horizontal">
-                                <div class="form-group row has-feedback">
-                                    <div class="col-lg-2">
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
                                         <label class="control-label" for="terapan">Nama Dosen</label>
                                     </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="nama-dosen-edit">
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="dosen">
                                     </div>
-                                    <div class="col-lg-2 text-right">
-                                        <label for="tahun" class="control-label">Tahun</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Judul</label>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <input type="number" min="2013" placeholder="2025" id="tahun-edit" class="form-control">
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="judul">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Nama Mahasiswa</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="mahasiswa">
+                                    </div>
+                                </div>
+                                <div class="form-group row has-feedback">
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Tahun</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="date" id="tahun" class="form-control">
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-lg-2">
-                                        <label for="judul">Judul</label>
+                                    <div class="col-lg-4">
+                                        <label class="control-label" for="terapan">Program Studi</label>
                                     </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="judul-edit">
-                                    </div>
-                                    <div class="col-lg-2 text-right">
-                                        <label for="prodi-edit">Program Studi</label>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select name="prodi-edit" id="prodi-edit" class="form-control">
-                                            <option value="cs1">Computer Science 1</option>
-                                            <option value="cs2">Computer Science 2</option>
-                                            <option value="cs3">Computer Science 3</option>
+                                    <div class="col-lg-8">
+                                        <select id="studi">
+                                            <option value="bm">Business Management</option>
+                                            <option value="bis">Business Information System</option>
+                                            <option value="cs">Computer Science</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-lg-2">
-                                        <label for="nama-mhs-edit">Nama Mahasiswa</label>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <input type="text" class="form-control" id="nama-mhs-edit">
                                     </div>
                                 </div>
                             </form>
                         </div>
+
+                        <!-- Modal Footer -->
                         <div class="modal-footer">
                             <div class="form-group row">
                                 <div class="col-lg-12 text-right">
                                     <button type="submit" class="btn" data-dismiss="modal">Batalkan</button>
-                                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#suting">Simpan Perubahan</button>
+                                    <button type="submit" class="btn btn-warning">Simpan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="delete" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header bg-red">
+                            <h4 class="modal-title text-center">Bimbingan Skripsi - Delete</h4>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>Anda yakin ingin menghapus data ini?</p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <div class="form-group row">
+                                <div class="col-lg-12 text-right">
+                                    <button type="submit" class="btn" data-dismiss="modal">Batal</button>
+                                    <button type="submit" class="btn btn-danger">Iya</button>
                                 </div>
                             </div>
                         </div>
