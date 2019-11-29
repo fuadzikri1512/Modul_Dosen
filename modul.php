@@ -40,10 +40,10 @@
                             <td>13</td>
                             <td>2019</td>
                             <td>Ilmu Komputer</td>
-                            <td class="text-center">
+                            <td class="text-center" style="width: 70px">
                                 <button class="btn btn-primary">File</button>
                             </td>
-                            <td class="text-center" style="max-width: 130px">
+                            <td class="text-center" style="width: 200px">
                                 <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
                                 <button class="btn btn-success">Print</button>
