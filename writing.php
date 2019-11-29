@@ -33,8 +33,8 @@
                             <th>Tulisan Ilmiah</th>
                             <th>Seminar</th>
                             <th>Jumlah Sitasi</th>
-                            <th style="max-width: 25px">File</th>
-                            <th style="max-width: 65px">Action</th>
+                            <th>File</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,10 +44,10 @@
                             <td>Ilmiah banget</td>
                             <td>Terang sekali</td>
                             <td>Infinity</td>
-                            <td class="text-center" style="max-width: 25px">
+                            <td class="text-center" style="width: 70px">
                                 <button class="btn btn-primary">Info</button>
                             </td>
-                            <td class="text-center" style="max-width: 65px">
+                            <td class="text-center" style="width: 200px">
                                 <button class="btn btn-warning" data-toggle="modal" data-target="#edit">Edit</button>
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
                                 <button class="btn btn-success">Print</button>
