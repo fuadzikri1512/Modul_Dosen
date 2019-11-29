@@ -9,24 +9,25 @@
         <div class="content-wrapper">
             <section class="content-header">
                 <h1>
-                    Writing
+                    Project Experience
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                     <li class="active">Experience</li>
-                    <li class="active">Writing</li>
+                    <li class="active">Project Experience</li>
                 </ol>
             </section>
-            <section class="content">          
+            <section class="content">
                 <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
                 <table class="table table-bordered col-lg-12">
                     <thead class="bg-aqua-gradient">
                         <tr>
                             <th>No</th>
-                            <th>Nama Dosen</th>
-                            <th>Tulisan Ilmiah</th>
-                            <th>Seminar</th>
-                            <th>Jumlah Sitasi</th>
+                            <th>Nama Project</th>
+                            <th>Role</th>
+                            <th>Tahun</th>
+                            <th>Keterangan</th>
+                            <th>Link</th>
                             <th>File</th>
                             <th>Action</th>
                         </tr>
@@ -34,10 +35,11 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Namaku dosen</td>
-                            <td>Ilmiah banget</td>
-                            <td>Terang sekali</td>
-                            <td>Infinity</td>
+                            <td>Project ilkom</td>
+                            <td>Developer</td>
+                            <td>2019</td>
+                            <td>Project ini ..</td>
+                            <td>Project.com</td>
                             <td class="text-center" style="width: 70px">
                                 <button class="btn btn-primary">Info</button>
                             </td>
@@ -86,26 +88,18 @@
                             <form action="#" class="form-horizontal">
                                 <div class="form-group row">
                                     <div class="col-lg-3">
-                                        <label class="control-label" for="terapan">Nama Dosen</label>
+                                        <label class="control-label" for="project">Nama Project</label>
                                     </div>
                                     <div class="col-lg-9">
-                                        <input type="text" class="form-control" id="terapan">
+                                        <input type="text" class="form-control" id="project">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-lg-3">
-                                        <label for="tulisan-ilmiah">Tulisan Ilmiah</label>
+                                        <label for="role">Role</label>
                                     </div>
                                     <div class="col-lg-9">
-                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="5" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-lg-3">
-                                        <label for="seminar">Seminar</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <textarea name="seminar" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                        <input type="text" class="form-control" id="role">
                                     </div>
                                 </div>
                                 <div class="form-group row has-feedback">
@@ -117,6 +111,23 @@
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="terapan">Keterangan</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control" id="terapan" rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="link">Link</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="link">
+                                    </div>
+                                </div>
+
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -144,26 +155,18 @@
                             <form action="#" class="form-horizontal">
                                 <div class="form-group row">
                                     <div class="col-lg-3">
-                                        <label class="control-label" for="terapan">Nama Dosen</label>
+                                        <label class="control-label" for="project">Nama Project</label>
                                     </div>
                                     <div class="col-lg-9">
-                                        <input type="text" class="form-control" id="terapan">
+                                        <input type="text" class="form-control" id="project">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-lg-3">
-                                        <label for="tulisan-ilmiah">Tulisan Ilmiah</label>
+                                        <label for="role">Role</label>
                                     </div>
                                     <div class="col-lg-9">
-                                        <textarea name="tulisan-ilmi" id="hehe" cols="30" rows="5" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-lg-3">
-                                        <label for="seminar">Seminar</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <textarea name="seminar" id="hehe" cols="30" rows="5" class="form-control"></textarea>
+                                        <input type="text" class="form-control" id="role">
                                     </div>
                                 </div>
                                 <div class="form-group row has-feedback">
@@ -175,6 +178,22 @@
                                         <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="terapan">Keterangan</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control" id="terapan" rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="link">Link</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="link">
+                                    </div>
+                                </div>     
                             </form>
                         </div>
                         <div class="modal-footer">
