@@ -28,8 +28,8 @@
                             <th>Nama Mahasiswa</th>
                             <th>Tahun</th>
                             <th>Program Studi</th>
-                            <th>File</th>
-                            <th>Action</th>
+                            <th style="max-width: 30px">File</th>
+                            <th style="max-width: 90px">Action</th>
                         </tr>
                     </thead>
                     <tbody>
