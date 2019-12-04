@@ -193,7 +193,7 @@
                                     <div class="col-lg-9">
                                         <input type="text" class="form-control" id="link">
                                     </div>
-                                </div>     
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer">
