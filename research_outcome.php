@@ -18,14 +18,13 @@
                 </ol>
             </section>
             <section class="content">
-
                 <div class="box">
                     <div class="box-header">
                         <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
                     </div><!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped text-center">
-                            <thead>
+                            <thead class="bg-aqua-gradient">
                                 <tr>
                                     <th rowspan="2" style="vertical-align: middle;">No</th>
                                     <th rowspan="2" style="vertical-align: middle;">Output Penelitian dan PKM</th>

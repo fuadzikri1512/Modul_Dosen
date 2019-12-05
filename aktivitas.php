@@ -4,13 +4,13 @@
 
 <body class="skin-blue">
     <?php include 'header.php';?>
-<div class="wrapper">
-    <?php include 'navbar.php';?>
-    <div class="content-wrapper">
-        <section class="content-header">
-            <h1>
-                Data Aktivitas Dosen
-            </h1>
+    <div class="wrapper">
+        <?php include 'navbar.php';?>
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>
+                    Data Aktivitas Dosen
+                </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li class="active">Data Aktivitas Dosen</li>
@@ -18,13 +18,13 @@
         </section>
         
         <section class="content">    
-        <div class="box">
-                    <div class="box-header">
-                        <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
-                    </div><!-- /.box-header -->
+            <div class="box">
+                <div class="box-header">
+                    <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
+                </div><!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped text-center">
-                            <thead>
+                            <thead class="bg-aqua-gradient">
                                 <tr>
                                     <th rowspan="2" style="vertical-align: middle;">No</th>
                                     <th rowspan="2" style="vertical-align: middle;">Nama Dosen</th>
@@ -194,12 +194,7 @@
             </div><!-- /.example-modal -->
         </div>
     </div>
-
-    
-
-
-
-
+ 
             <!-- <form action="#" class="form-horizontal">
                 <div class="form-group row">
                     <div class="col-lg-2">

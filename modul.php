@@ -18,8 +18,12 @@
             </section>
 
             <section class="content">
-                <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
-                <table class="table table-bordered col-lg-12">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="text-right"><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#save"><i class="fa fa-plus"></i></button></div>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                <table class="table table-bordered ">
                     <thead class="bg-aqua-gradient">
                         <tr>
                             <th>No</th>
@@ -51,6 +55,7 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
             <!-- Modal Create -->
