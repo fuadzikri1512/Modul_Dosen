@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Des 2019 pada 08.15
+-- Waktu pembuatan: 07 Des 2019 pada 12.09
 -- Versi server: 10.1.38-MariaDB
--- Versi PHP: 7.3.2
+-- Versi PHP: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,33 @@ SET time_zone = "+00:00";
 --
 -- Database: `modul_dosen`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `aktivitas`
+--
+
+CREATE TABLE `aktivitas` (
+  `id` int(11) NOT NULL,
+  `jenis_kegiatan` varchar(250) NOT NULL,
+  `tempat_kegiatan` varchar(250) NOT NULL,
+  `tahun` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `bimbingan_skripsi`
+--
+
+CREATE TABLE `bimbingan_skripsi` (
+  `id` int(11) NOT NULL,
+  `judul_ta` varchar(250) NOT NULL,
+  `nama_mahasiswa` varchar(250) NOT NULL,
+  `tahun` date NOT NULL,
+  `jurusan` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -83,9 +110,29 @@ CREATE TABLE `pendidikan` (
   `tahun_selesai` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `sertifikasi`
+--
+
+CREATE TABLE `sertifikasi` (
+  `id` int(11) NOT NULL,
+  `nama_sertifikat` varchar(250) NOT NULL,
+  `disertifikasi_oleh` varchar(250) NOT NULL,
+  `masa_berlaku` date NOT NULL,
+  `file` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `aktivitas`
+--
+ALTER TABLE `aktivitas`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `dosen`
@@ -112,8 +159,20 @@ ALTER TABLE `pendidikan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `sertifikasi`
+--
+ALTER TABLE `sertifikasi`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `aktivitas`
+--
+ALTER TABLE `aktivitas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `dosen`
@@ -138,6 +197,12 @@ ALTER TABLE `pembicara`
 --
 ALTER TABLE `pendidikan`
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `sertifikasi`
+--
+ALTER TABLE `sertifikasi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
