@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Des 2019 pada 12.09
--- Versi server: 10.1.38-MariaDB
--- Versi PHP: 7.3.4
+-- Generation Time: Dec 12, 2019 at 02:12 PM
+-- Server version: 10.1.35-MariaDB
+-- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aktivitas`
+-- Table structure for table `aktivitas`
 --
 
 CREATE TABLE `aktivitas` (
@@ -38,7 +38,7 @@ CREATE TABLE `aktivitas` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `bimbingan_skripsi`
+-- Table structure for table `bimbingan_skripsi`
 --
 
 CREATE TABLE `bimbingan_skripsi` (
@@ -52,7 +52,7 @@ CREATE TABLE `bimbingan_skripsi` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `dosen`
+-- Table structure for table `dosen`
 --
 
 CREATE TABLE `dosen` (
@@ -69,7 +69,49 @@ CREATE TABLE `dosen` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `modul_pembelajaran`
+-- Table structure for table `exp_project`
+--
+
+CREATE TABLE `exp_project` (
+  `id` int(20) NOT NULL,
+  `nama_project` varchar(50) NOT NULL,
+  `role` varchar(50) NOT NULL,
+  `tahun` datetime NOT NULL,
+  `keterangan` varchar(250) NOT NULL,
+  `link` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exp_researchoutcome`
+--
+
+CREATE TABLE `exp_researchoutcome` (
+  `id` int(11) NOT NULL,
+  `output` varchar(250) NOT NULL,
+  `tahun` date NOT NULL,
+  `keterangan` varchar(250) NOT NULL,
+  `berkas` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exp_writing`
+--
+
+CREATE TABLE `exp_writing` (
+  `id` int(11) NOT NULL,
+  `tulisan_ilmiah` varchar(250) NOT NULL,
+  `seminar` varchar(250) NOT NULL,
+  `jumlah_sitasi` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `modul_pembelajaran`
 --
 
 CREATE TABLE `modul_pembelajaran` (
@@ -85,7 +127,7 @@ CREATE TABLE `modul_pembelajaran` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pembicara`
+-- Table structure for table `pembicara`
 --
 
 CREATE TABLE `pembicara` (
@@ -99,7 +141,7 @@ CREATE TABLE `pembicara` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pendidikan`
+-- Table structure for table `pendidikan`
 --
 
 CREATE TABLE `pendidikan` (
@@ -113,7 +155,7 @@ CREATE TABLE `pendidikan` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sertifikasi`
+-- Table structure for table `sertifikasi`
 --
 
 CREATE TABLE `sertifikasi` (
@@ -129,77 +171,113 @@ CREATE TABLE `sertifikasi` (
 --
 
 --
--- Indeks untuk tabel `aktivitas`
+-- Indexes for table `aktivitas`
 --
 ALTER TABLE `aktivitas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `dosen`
+-- Indexes for table `dosen`
 --
 ALTER TABLE `dosen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `modul_pembelajaran`
+-- Indexes for table `exp_project`
+--
+ALTER TABLE `exp_project`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `exp_researchoutcome`
+--
+ALTER TABLE `exp_researchoutcome`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `exp_writing`
+--
+ALTER TABLE `exp_writing`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `modul_pembelajaran`
 --
 ALTER TABLE `modul_pembelajaran`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pembicara`
+-- Indexes for table `pembicara`
 --
 ALTER TABLE `pembicara`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pendidikan`
+-- Indexes for table `pendidikan`
 --
 ALTER TABLE `pendidikan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `sertifikasi`
+-- Indexes for table `sertifikasi`
 --
 ALTER TABLE `sertifikasi`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `aktivitas`
+-- AUTO_INCREMENT for table `aktivitas`
 --
 ALTER TABLE `aktivitas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `dosen`
+-- AUTO_INCREMENT for table `dosen`
 --
 ALTER TABLE `dosen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `modul_pembelajaran`
+-- AUTO_INCREMENT for table `exp_project`
+--
+ALTER TABLE `exp_project`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `exp_researchoutcome`
+--
+ALTER TABLE `exp_researchoutcome`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `exp_writing`
+--
+ALTER TABLE `exp_writing`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `modul_pembelajaran`
 --
 ALTER TABLE `modul_pembelajaran`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `pembicara`
+-- AUTO_INCREMENT for table `pembicara`
 --
 ALTER TABLE `pembicara`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `pendidikan`
+-- AUTO_INCREMENT for table `pendidikan`
 --
 ALTER TABLE `pendidikan`
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `sertifikasi`
+-- AUTO_INCREMENT for table `sertifikasi`
 --
 ALTER TABLE `sertifikasi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
