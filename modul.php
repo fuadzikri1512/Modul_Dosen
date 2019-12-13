@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <?php include 'frame.php'; ?>
-
+<?php include '../../config/kelola-data/kurikulum.php';
+                $db         = new modul();
+                $table      = 'modul_pembelajaran';
+?>
 <body class="skin-blue">
     <?php include 'header.php';?>
     <div class="wrapper">

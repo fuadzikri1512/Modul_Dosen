@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <?php include 'frame.php'; ?>
-
+<?php include '../../config/kelola-data/kurikulum.php';
+                $db         = new project();
+                $table      = 'exp_project';
+?>
 <body class="skin-blue">
     <?php include 'header.php';?>
     <div class="wrapper">

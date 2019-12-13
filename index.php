@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php include 'frame.php'; ?>
-
+ 
 <body class="skin-blue">
     <?php include 'header.php';?>
     <div class="wrapper">
